@@ -7,12 +7,13 @@ use strict;
 use LWP::Simple;
 use WWW::Mechanize;
 
+my $i = 0;
 
 #indicate when
 print "To exit, enter 'e'.\n";
 
 #continue translating until the user indicates otherwise
-while(true) {
+while($i eq 0) {
 
 
 	print "Enter translation below.\n";
